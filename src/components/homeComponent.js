@@ -24,7 +24,8 @@ const HomeComponent = (props) => {
         .then(res => {
           console.log(res.data);
           setDisplay(res.data)})
-        .catch(err => {console.log(err)},[])        
+        .catch(err => {console.log(err);
+        alert("These aren't the droids you're looking for")},[])        
   }
   console.log(display)
 
